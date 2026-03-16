@@ -1,0 +1,39 @@
+:root {
+    --accent-red: #900;
+    --bg-white: #fff;
+    --text-black: #000;
+}
+
+/* THE SELECTION COLOR */
+::selection {
+    background-color: var(--accent-red);
+    color: #fff;
+}
+
+/* THE "BLEND" TRICK FROM THEIR SOURCE */
+.site-header.blend {
+    color: #fff;
+    mix-blend-mode: difference;
+    /* This makes the text invert on dark/light images */
+}
+
+/* THE SQUARED LINE DECORATOR */
+.squared-line {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.squared-line .line {
+    height: 0.5px;
+    background-color: currentColor;
+    flex-grow: 1;
+}
+
+.squared-line .square {
+    height: 3px;
+    width: 3px;
+    background-color: currentColor;
+    transform: rotate(45deg);
+}
