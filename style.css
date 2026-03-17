@@ -31,9 +31,3 @@
     flex-grow: 1;
 }
 
-.squared-line .square {
-    height: 3px;
-    width: 3px;
-    background-color: currentColor;
-    transform: rotate(45deg);
-}
